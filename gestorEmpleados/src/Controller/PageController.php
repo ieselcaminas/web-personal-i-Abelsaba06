@@ -17,9 +17,9 @@ final class PageController extends AbstractController
             'path' => 'src/Controller/PageController.php',
         ]);
     }
-    #[Route('/',name: 'inicio')]
+    /** El name se tiene que llamar igual que el documento */
+    #[Route('/',name: 'index')]
     public function inicio(): Response{
-        return new Response("Bienvenido a quien quieres ver?");
+        return $this->render('index.html.twig');
     }
-    
 }
