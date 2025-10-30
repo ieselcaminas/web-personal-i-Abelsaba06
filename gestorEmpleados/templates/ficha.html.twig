@@ -1,0 +1,16 @@
+{% extends 'base.html.twig'%}
+{% block title %}Workers Investigation{% endblock %}
+{% block body %}
+{% if trabajador %}
+    <h1>{{ trabajador.nombre }}</h1>
+    <ul>
+        <li><strong>Teléfono: </strong>{{ trabajador.telefono }}</li>
+        <li><strong>Edad: </strong>{{ trabajador.edad }}</li>
+        <li><strong>Cotización: </strong>{{ trabajador.cotización }}</li>
+        <li><strong>Salario: </strong>{{ trabajador.salario }}</li>
+        <li><strong>Puesto de trabajo: </strong>{{ trabajador.puesto }}</li>
+    </ul>
+{% else %}
+    <p>Este trabajador no esta fichado o no existe, <strong>quieres ficharlo?</strong></p>
+{% endif %}
+{% endblock %}
