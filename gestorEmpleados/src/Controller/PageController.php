@@ -21,4 +21,5 @@ final class PageController extends AbstractController
     public function inicio(): Response{
         return new Response("Bienvenido a quien quieres ver?");
     }
+    
 }
