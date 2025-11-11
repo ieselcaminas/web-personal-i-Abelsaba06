@@ -1,0 +1,25 @@
+{% extends 'base.html.twig'%}
+{% block title %}Workers Investigation{% endblock %}
+{% block body %}
+<nav>
+<button><a href="/register">Registrarse</a></button>
+<button><a href="/login">Loguearse</a></button>
+</nav>
+	<h1>Workers Investigation</h1>
+	<h2>Bienvenido. Que vamos a hacer hoy?</h2>
+	<div id="main-content">
+	<div id="objeto">
+		<h3>Trabajadores</h3>
+	<button id="new"><a href="/trabajador/nuevo">Fichar trabajador</a></button>
+	{% for trabajador in trabajadores %}
+		 {{ include ('datos_trabajadores.html.twig', {'trabajador': trabajador})}}
+	{% endfor %}
+	</div>
+	<div id="objeto">
+		<h3>Empresas</h3>
+	<button id="new"><a href="/empresa/nueva">Añadir empresa</a></button>
+	{% for empresa in empresas %}
+		 {{ include ('datos_empresa.html.twig', {'empresa': empresa})}}
+	{% endfor %}
+	</div>
+{% endblock %}

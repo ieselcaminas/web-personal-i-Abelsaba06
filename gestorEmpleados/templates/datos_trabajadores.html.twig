@@ -1,0 +1,12 @@
+<p> <a href="/trabajador/{{ trabajador.id }}">
+                <strong>{{ trabajador.nombre }} </strong>,
+                <strong>{{ trabajador.telefono }} </strong>,
+                <strong>{{ trabajador.edad }} </strong>,
+                <strong>{{ trabajador.cotizacion }}</strong>,
+                <strong>{{ trabajador.salario }} €</strong>,
+                <strong>{{ trabajador.puesto }}</strong>,
+                <strong>{{ trabajador.empresa ? trabajador.empresa.nombre : 'null' }}</strong>
+        </a>
+        <button><a href="/trabajador/editar/{{ trabajador.id }}">Editar</a></button>
+        <button><a href="/trabajador/delete/{{ trabajador.id }}">Borrar</a></button>
+</p>

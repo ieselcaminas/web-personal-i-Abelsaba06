@@ -1,0 +1,15 @@
+{% extends 'base.html.twig'%}
+{% block title %}Workers Investigation{% endblock %}
+{% block body %}
+{% if empresa %}
+
+    <h1 style="color: rgb(241, 175, 98);">{{ empresa.nombre }}</h1>
+    <div id="objeto2">
+    <ul>
+        <li><strong>Nº de trabajadores: </strong>{{ empresa.numeroTrabajadores }}
+    </ul>
+    </div>
+{% else %}
+    <p>Esta empresa no esta en nuestra base de datos o no existe, te has equivocado o <strong>quieres ponerla en la base de datos?</strong></p>
+{% endif %}
+{% endblock %}

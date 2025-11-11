@@ -1,0 +1,2 @@
+# Web personal Abel: Gestor de empleados
+Este proyecto tratara sobre un gestor para empleados de los cuales podremos ver su experiencia laboral, el nombre, la edad, el salario, el tiempo que lleva en una empresa podremos "fichar" (añadir un empleado a la base de datos) , "quitar" (eliminar de la base de datos) y modificar algun dato que ha cambiado como por ejemplo si cambia su salario o si cambia de empresa. La empresa serà una entidad a parte de la base de datos 
