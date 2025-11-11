@@ -63,6 +63,5 @@ public function setNumeroTrabajadores(int $numeroTrabajadores): self
 {
     $this->numeroTrabajadores = $numeroTrabajadores;
     return $this;
-    
 }
 }
