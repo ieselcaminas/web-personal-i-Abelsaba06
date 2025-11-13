@@ -25,18 +25,6 @@ class Empresa
         #[Assert\PositiveOrZero(message: "El numero de trabajadores no puede ser negativo.")]
     private int $numeroTrabajadores;
 
-
-    /**
-     * @var Collection<int, Trabajador>
-     */
-    #[ORM\OneToMany(targetEntity: Trabajador::class, mappedBy: 'empresa')]
-    private Collection $trabajadors;
-
-    public function __construct()
-    {
-        $this->trabajadors = new ArrayCollection();
-    }
-
     public function getId(): ?int
     {
         return $this->id;
