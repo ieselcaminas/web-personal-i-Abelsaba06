@@ -11,7 +11,7 @@
         <li><strong>Cotización: </strong>{{ trabajador.cotizacion }}</li>
         <li><strong>Salario: </strong>{{ trabajador.salario }} €</li>
         <li><strong>Puesto de trabajo: </strong>{{ trabajador.puesto }}</li>
-        <li><strong>Empresa: </strong>{{ trabajador.empresa ? trabajador.empresa.nombre : 'Paro' }}</li>
+        <li><strong>Empresa: </strong>{{ trabajador.empresa ? trabajador.empresa.nombre : 'Empresa desconocida' }}</li>
     </ul>
 </div>
 {% else %}
