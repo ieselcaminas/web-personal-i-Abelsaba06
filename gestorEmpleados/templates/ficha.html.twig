@@ -9,9 +9,9 @@
         <li><strong>Teléfono: </strong>{{ trabajador.telefono }}</li>
         <li><strong>Edad: </strong>{{ trabajador.edad }} años </li>
         <li><strong>Cotización: </strong>{{ trabajador.cotizacion }}</li>
-        <li><strong>Salario: </strong>{{ trabajador.salario }} €</li>
+        <li><strong>Salario: </strong>{{ trabajador.empresa ? trabajador.salario :0}}€</li>
         <li><strong>Puesto de trabajo: </strong>{{ trabajador.puesto }}</li>
-        <li><strong>Empresa: </strong>{{ trabajador.empresa ? trabajador.empresa.nombre : 'Empresa desconocida' }}</li>
+        <li><strong>Empresa: </strong>{{ trabajador.empresa ? trabajador.empresa.nombre : 'Paro' }}</li>
 
     </ul>
 </div>
